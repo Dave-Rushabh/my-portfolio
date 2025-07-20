@@ -6,7 +6,7 @@ const About = () => {
       <div className="md:text-3xl text-2xl font-bold md:pt-20 pt-10">About</div>
 
       <ul className="md:text-lg text-base flex flex-col gap-3 mt-8 w-full">
-        <li>Hello ! I’m Rushabh Dave 👋</li>
+        <li>Hello ! I&#39;m Rushabh Dave 👋</li>
 
         <li>
           A frontend-focused full-stack developer from India with{" "}
@@ -17,13 +17,13 @@ const About = () => {
         <li>
           I specialize in{" "}
           <b>JavaScript, React, TypeScript, Node.js, MongoDB, and Express</b>,
-          and I’m highly proficient with UI frameworks like{" "}
+          and I&#39;m highly proficient with UI frameworks like{" "}
           <b>Chakra UI, Ant Design, and Material UI</b>.
         </li>
 
         <li>
-          Over the years, I’ve collaborated with cross-functional teams across
-          continents and contributed to domains like:
+          Over the years, I&#39;ve collaborated with cross-functional teams
+          across continents and contributed to domains like:
           <ul className="list-disc ml-5 mt-1">
             <li>Non-Emergency Medical Transportation</li>
             <li>Internal HR & Employee Management Portals</li>
@@ -39,7 +39,7 @@ const About = () => {
         </li>
 
         <li>
-          Recently, I’ve also been diving into backend technologies like{" "}
+          Recently, I&#39;ve also been diving into backend technologies like{" "}
           <b>Supabase</b> and <b>PostgreSQL</b>, experimenting with real-time
           data and serverless deployments.
         </li>
@@ -47,8 +47,8 @@ const About = () => {
         <li>
           Outside of work, I regularly build <b>hobby projects</b> to explore
           new tools, frameworks, and improve my problem-solving skills. I
-          believe learning never stops, and I'm always curious about what’s next
-          in tech.
+          believe learning never stops, and I'm always curious about what&#39;s
+          next in tech.
         </li>
       </ul>
     </div>
