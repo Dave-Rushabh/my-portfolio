@@ -85,7 +85,7 @@ const Navbar = () => {
           onClick={() => {
             window.scrollTo({ top: 0 });
           }}
-          className="md:flex hidden fixed h-10 w-10 right-6 bottom-6 bg-[var(--light-theme-accent)] cursor-pointer items-center justify-center rounded-lg text-white"
+          className="z-10 md:flex hidden fixed h-10 w-10 right-6 bottom-6 bg-[var(--light-theme-accent)] cursor-pointer items-center justify-center rounded-lg text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

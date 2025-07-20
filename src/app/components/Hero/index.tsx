@@ -7,7 +7,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <>
-      <section className="flex items-center w-full h-screen bg-[var(--light-theme-primary)] custom-box">
+      <section className="flex items-center w-full min-h-screen bg-[var(--light-theme-primary)] custom-box ">
         <div className="flex flex-col gap-4 items-center justify-center w-full">
           <h3 className="lg:text-5xl text-3xl flex items-center">
             👋 <TypeWriter strings={getGreetings} />

@@ -1,13 +1,13 @@
 import React from "react";
 
-const Contact = () => {
+const Projects = () => {
   return (
-    <div id="contact" className="min-h-screen custom-box sequence-sections">
+    <div id="projects" className="min-h-screen custom-box bg-white ">
       <div className="md:text-3xl text-2xl font-bold md:pt-20 pt-10">
-        Contact
+        Projects
       </div>
     </div>
   );
 };
 
-export default Contact;
+export default Projects;
