@@ -16,14 +16,14 @@ const Projects = () => {
       <SwiperSlide key={name}>
         <div className="bg-[var(--light-theme-primary)] text-white border rounded-lg p-6 flex flex-col h-full relative">
           {/* Title */}
-          <h3 className="text-lg font-bold mb-3 text-[var(--light-theme-accent)] line-clamp-2 min-h-[60px]">
+          <h3 className="text-xl font-semibold mb-3 text-[var(--light-theme-accent)] line-clamp-2 min-h-[60px]">
             {name}
           </h3>
 
           {/* About */}
-          <ul className="list-disc pl-4 line-clamp-15 mb-12">
+          <ul className="list-disc pl-6 line-clamp-15 mb-12">
             {about.map((point, i) => (
-              <li key={i} className="text-sm text-gray-600">
+              <li key={i} className="text-md text-gray-600">
                 {point}
               </li>
             ))}
