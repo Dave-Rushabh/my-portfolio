@@ -41,7 +41,7 @@ const Experience = () => {
                 &nbsp;•&nbsp;{duration}
               </span>
               <p className="text-sm italic text-gray-400 mt-1">{location}</p>
-              <ul className="mt-2 space-y-1 text-[var(--light-theme-accent)]">
+              <ul className="mt-2 space-y-1 text-gray-600">
                 {description.map((info, idx) => {
                   const { data, link } = info;
 
