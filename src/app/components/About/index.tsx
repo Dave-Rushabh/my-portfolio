@@ -47,10 +47,10 @@ const About = () => {
         </li>
 
         <li>
-          Outside of work, I regularly build <b>hobby projects</b> to explore
-          new tools, frameworks, and improve my problem-solving skills. I
-          believe learning never stops, and I'm always curious about what’s next
-          in tech.
+          Outside of work, I regularly build hobby projects to explore new
+          tools, frameworks, and improve my problem-solving skills. I believe
+          learning never stops, and I'm always curious about what’s next in
+          tech.
         </li>
       </ul>
     </div>

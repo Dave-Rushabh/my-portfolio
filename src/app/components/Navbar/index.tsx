@@ -60,24 +60,6 @@ const Navbar = () => {
             {menu.label}
           </Link>
         ))}
-        <button
-          onClick={() => {
-            window.scrollTo({ top: 0 });
-          }}
-          className="absolute h-10 w-10 -top-10 bg-[var(--light-theme-navbar-glass)] flex items-center justify-center rounded-t-lg text-white"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512.001 512.001"
-            xmlSpace="preserve"
-            height={24}
-            width={24}
-            fill="currentColor"
-          >
-            <path d="m398.998 132.672-128-126.528c-8.341-8.192-21.675-8.192-29.995 0l-128 126.528a21.27 21.27 0 0 0-6.336 15.168v108.139c0 8.64 5.184 16.427 13.163 19.712 7.957 3.307 17.131 1.472 23.253-4.629L256 158.144l112.917 112.917A21.25 21.25 0 0 0 384 277.312c2.752 0 5.525-.512 8.171-1.621 7.979-3.285 13.163-11.072 13.163-19.712V147.84a21.36 21.36 0 0 0-6.336-15.168" />
-            <path d="m398.998 367.347-128-126.528c-8.341-8.213-21.675-8.213-29.995 0l-128 126.528a21.27 21.27 0 0 0-6.336 15.168v108.139a21.335 21.335 0 0 0 13.163 19.712c7.957 3.328 17.131 1.472 23.253-4.629L256 392.819l112.917 112.917A21.34 21.34 0 0 0 384 511.987c2.752 0 5.525-.512 8.171-1.621a21.335 21.335 0 0 0 13.163-19.712V382.515a21.36 21.36 0 0 0-6.336-15.168" />
-          </svg>
-        </button>
       </div>
 
       {showNavbar ? (
@@ -85,7 +67,7 @@ const Navbar = () => {
           onClick={() => {
             window.scrollTo({ top: 0 });
           }}
-          className="z-10 md:flex hidden fixed h-10 w-10 right-6 bottom-6 bg-[var(--light-theme-accent)] cursor-pointer items-center justify-center rounded-lg text-white"
+          className="z-10 flex fixed h-10 w-10 md:right-6 md:bottom-6 bottom-20 right-3 bg-[var(--light-theme-accent)] cursor-pointer items-center justify-center rounded-lg text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

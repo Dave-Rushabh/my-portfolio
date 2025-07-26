@@ -20,3 +20,23 @@ html {
   background-color: var(--light-theme-navbar-glass);
   backdrop-filter: blur(16px);
 }
+
+.swiper-pagination-progressbar {
+  bottom: 0 !important;
+  top: auto !important;
+  height: 2px !important;
+  background-color: #e5e7eb !important;
+}
+.swiper-pagination-progressbar-fill {
+  background-color: var(--light-theme-accent) !important;
+}
+
+.swiper-wrapper {
+  padding-bottom: 30px !important;
+}
+
+.swiper-slide {
+  height: unset !important;
+  min-height: 100% !important;
+  user-select: none !important;
+}
