@@ -47,13 +47,13 @@ export const SKILLS_ARRAY: SKILLS = [
   { iconPath: "/postgresql.svg", skillName: "Postgre SQL" },
   { iconPath: "/mySQL.svg", skillName: "MySQL" },
 
-  { iconPath: "/graphql.svg", skillName: "GraphQL" },
+  { iconPath: "/graphQL.svg", skillName: "GraphQL" },
   { iconPath: "/postman.svg", skillName: "Postman" },
 
   { iconPath: "/docker.svg", skillName: "Docker" },
 
   { iconPath: "/git.svg", skillName: "Git" },
-  { iconPath: "/github.svg", skillName: "GitHub" },
+  { iconPath: "/gitHub.svg", skillName: "GitHub" },
   { iconPath: "/gitlab.svg", skillName: "GitLab" },
   { iconPath: "/bitbucket.svg", skillName: "BitBucket" },
   { iconPath: "/JIRA.svg", skillName: "Jira" },
