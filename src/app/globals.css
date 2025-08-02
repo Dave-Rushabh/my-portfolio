@@ -14,6 +14,7 @@ html {
   max-width: 1920px;
   margin: auto;
   @apply p-3 md:p-4 lg:p-6 xl:p-8;
+  user-select: none;
 }
 
 .navbar-blur {
@@ -39,4 +40,17 @@ html {
   height: unset !important;
   min-height: 100% !important;
   user-select: none !important;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 50s linear infinite;
 }

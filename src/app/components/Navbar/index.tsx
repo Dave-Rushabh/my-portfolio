@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,13 +17,37 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const sections = MENUS.map((menu) =>
+      document.getElementById(menu.id)
+    ).filter(Boolean) as HTMLElement[];
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        rootMargin: "-40% 0px -55% 0px", // triggers when ~middle of screen
+        threshold: 0,
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       {/* Desktop navbar */}
       <div
         className={`
         navbar-blur hidden md:flex fixed top-[20px] rounded-2xl w-11/12 mx-auto left-0 right-0 z-50 text-white font-bold shadow-2xl p-6
-          transition-all duration-500 ease-in-out
+          transition-all duration-500 ease-in-out select-none
           ${
             showNavbar
               ? "opacity-100 translate-y-0"
@@ -35,7 +60,9 @@ const Navbar = () => {
             <Link
               href={`#${menu.id}`}
               key={menu.id}
-              className="hover:underline hover:decoration-white hover:underline-offset-8"
+              className={`hover:underline hover:decoration-white hover:underline-offset-8 ${
+                activeSection === menu.id ? "underline underline-offset-8" : ""
+              }`}
             >
               {menu.label}
             </Link>
@@ -47,7 +74,7 @@ const Navbar = () => {
       <div
         className={`
         navbar-blur md:hidden fixed bottom-5 left-3 right-3 py-4 px-4 rounded-xl text-white font-semibold flex gap-4 justify-center shadow-xl z-50 
-          transition-all duration-500 ease-in-out
+          transition-all duration-500 ease-in-out select-none
           ${
             showNavbar
               ? "opacity-100 translate-y-0"
@@ -56,7 +83,13 @@ const Navbar = () => {
         `}
       >
         {MENUS.map((menu) => (
-          <Link href={`#${menu.id}`} key={menu.id} className="text-sm">
+          <Link
+            href={`#${menu.id}`}
+            key={menu.id}
+            className={`text-sm ${
+              activeSection === menu.id ? "underline underline-offset-8" : ""
+            }`}
+          >
             {menu.label}
           </Link>
         ))}

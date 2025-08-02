@@ -25,10 +25,10 @@ const Hero = () => {
             {"<Rushabh Dave />"}
           </h1>
 
-          <div className="md:w-1/2 w-full flex justify-between mt-16">
+          <div className="md:w-1/2 w-full flex justify-center gap-8 mt-16">
             <Link
               href={"#contact"}
-              className="flex text-sm gap-2 bg-[var(--light-theme-accent)] text-white px-2 py-3 rounded-lg"
+              className="flex text-sm gap-2 bg-[var(--light-theme-accent)] text-white px-4 py-3 rounded-lg"
             >
               <svg
                 width="24"
@@ -41,7 +41,7 @@ const Hero = () => {
               </svg>
               Get in Touch
             </Link>
-            <button className="flex text-sm gap-2 bg-[var(--light-theme-accent)] text-white px-2 py-3 rounded-lg">
+            <button className="flex text-sm gap-2 bg-[var(--light-theme-accent)] text-white px-4 py-3 rounded-lg">
               <svg
                 width="24"
                 height="24"
